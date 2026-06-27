@@ -1,0 +1,125 @@
+<% layout("/layouts/boilerplate") %>
+<body>
+  <div class="container mt-4 mb-5">
+    <div class="row">
+      <div class="col-lg-8 offset-lg-2">
+        <h2 class="mb-4">Create a New Listing</h2>
+
+        <form
+          method="post"
+          action="/listings"
+          novalidate
+          class="needs-validation"
+          enctype="multipart/form-data"
+        >
+          <div class="mb-3">
+            <label for="title" class="form-label">Title</label>
+            <input
+              type="text"
+              name="listing[title]"
+              placeholder="Enter the Title"
+              class="form-control"
+              required
+            />
+            <div class="invalid-feedback">Please Enter the Title</div>
+          </div>
+
+          <div class="mb-3">
+            <label for="description" class="form-label">Description</label>
+            <textarea
+              name="listing[description]"
+              placeholder="Enter the description"
+              class="form-control"
+              rows="4"
+              required
+            ></textarea>
+            <div class="invalid-feedback">Description should be valid</div>
+          </div>
+          <div class="mb-3">
+            <label for="category" class="form-label">Category</label>
+
+            <select
+              name="listing[category]"
+              id="category"
+              class="form-select"
+              required
+            >
+              <option value="">Select a Category</option>
+              <option value="Trending">Trending</option>
+              <option value="Rooms">Rooms</option>
+              <option value="Iconic Cities">Iconic Cities</option>
+              <option value="Mountains">Mountains</option>
+              <option value="Castles">Castles</option>
+              <option value="Amazing Pools">Amazing Pools</option>
+              <option value="Camping">Camping</option>
+              <option value="Farms">Farms</option>
+              <option value="Arctic">Arctic</option>
+              <option value="Domes">Domes</option>
+              <option value="Boats">Boats</option>
+            </select>
+
+            <div class="invalid-feedback">Please select a category.</div>
+          </div>
+
+          <div class="mb-3">
+            <label for="imageUrl" class="form-label">Upload Image</label>
+            <input type="file" name="listing[image]" class="form-control" />
+          </div>
+
+          <div class="mb-3">
+            <label for="price" class="form-label">Price</label>
+            <input
+              type="text"
+              name="listing[price]"
+              placeholder="Enter the price"
+              class="form-control"
+              required
+            />
+            <div class="invalid-feedback">Price should be valid</div>
+          </div>
+
+          <div class="row mb-4">
+            <div class="col-md-6">
+              <label for="country" class="form-label">Country</label>
+              <input
+                type="text"
+                name="listing[country]"
+                placeholder="Enter the country"
+                class="form-control"
+                required
+              />
+              <div class="invalid-feedback">Country should be valid</div>
+            </div>
+
+            <div class="col-md-6">
+              <label for="location" class="form-label">Location</label>
+              <input
+                type="text"
+                name="listing[location]"
+                placeholder="Enter the Location"
+                class="form-control"
+                required
+              />
+              <div class="invalid-feedback">Location should be Valid</div>
+            </div>
+          </div>
+
+          <button type="submit" class="btn btn-dark edit-btn">
+            Add Listing
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const form = document.querySelector(".needs-validation");
+    form.addEventListener("submit", function (event) {
+      if (!form.checkValidity()) {
+        event.preventDefault();
+        event.stopPropagation();
+      }
+      form.classList.add("was-validated");
+    });
+  </script>
+</body>

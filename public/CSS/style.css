@@ -1,0 +1,310 @@
+* {
+  font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.container {
+  flex: 1;
+}
+
+nav {
+  height: 5rem;
+  background-color: white;
+}
+
+nav a {
+  color: #222222 !important;
+}
+
+.fa-compass {
+  color: #fe424d;
+}
+
+.f-container {
+  background-color: rgb(216, 213, 213);
+  height: 8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.f-socilas {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+.f-socilas i {
+  font-size: 1.4rem;
+  margin-left: 1rem;
+}
+
+.f-tools {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+
+  text-align: center;
+}
+
+.f-tools a {
+  text-decoration: none;
+  color: black;
+  margin-left: 2rem;
+}
+
+.listing-card {
+  border: none !important;
+  margin-bottom: 2rem !important ;
+}
+
+.card-img-top {
+  border-radius: 1rem !important;
+  width: 100% !important;
+  object-fit: cover !important;
+}
+
+.card-body {
+  padding: 0 !important;
+}
+
+.show-card .card-body {
+  padding: 1.5rem !important;
+}
+
+.card-text-title {
+  font-weight: 500 !important;
+}
+.card-link {
+  text-decoration: none;
+}
+
+/* Card Effect */
+.card-img-overlay {
+  opacity: 0;
+}
+.card-img-overlay:hover {
+  opacity: 0.2;
+  background-color: white;
+}
+
+.add-btn {
+  background-color: #fe424d !important;
+  border: none !important;
+  color: white !important;
+}
+
+.show-img {
+  height: 30vh;
+}
+
+.btns {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1.5rem;
+  margin-bottom: 3rem;
+  justify-content: flex-start;
+}
+
+.btns a,
+.btns button {
+  margin: 0 !important;
+}
+
+.edit-btn {
+  background-color: #fe424d !important;
+  border: none !important;
+}
+
+.show-card {
+  padding-left: 0;
+  padding-right: 0;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+#map {
+  height: 400px;
+  width: 100%;
+  border-radius: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 4px 18px rgba(0, 0, 0, 0.15);
+}
+
+.home-marker {
+  background-color: #fe424d;
+  width: 38px;
+  height: 38px;
+  border-radius: 50% 50% 50% 0;
+  transform: rotate(-45deg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.25);
+  border: 2px solid white;
+}
+
+.home-marker::before {
+  content: "🏠";
+  transform: rotate(45deg);
+  font-size: 20px;
+}
+
+.map-popup h5 {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.map-popup p {
+  margin: 0.3rem 0 0;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.leaflet-popup-content-wrapper {
+  border-radius: 12px;
+}
+
+.site-footer {
+    border-top: 1px solid #ddd;
+    background-color: #f7f7f7;
+    padding: 1rem 2rem;
+    margin-top: 2rem;
+    font-size: 0.9rem;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.footer-left,
+.footer-right {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+    flex-wrap: wrap;
+}
+
+.footer-left a,
+.footer-right a {
+    color: #222;
+    text-decoration: none;
+}
+
+.footer-left a:hover {
+    text-decoration: underline;
+}
+
+.footer-right i {
+    font-size: 1.25rem;
+}
+
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+/* Responsive fixes only */
+
+@media (max-width: 992px) {
+  nav {
+    height: auto;
+  }
+
+  .navbar-collapse {
+    background-color: white;
+    padding: 1rem;
+  }
+
+  .navbar-nav {
+    margin-top: 0.5rem;
+  }
+
+  form.d-flex {
+    width: 100%;
+    gap: 0.5rem;
+  }
+
+  .search-inp {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .filters {
+    overflow-x: auto;
+    flex-wrap: nowrap !important;
+    padding-bottom: 0.5rem;
+  }
+
+  .filter {
+    min-width: 75px;
+    margin-right: 1rem !important;
+  }
+
+  .tax-toggle {
+    min-width: 230px;
+    margin-left: 0 !important;
+  }
+
+  .show-img {
+    height: 25vh;
+  }
+
+  #map {
+    height: 300px;
+  }
+
+  .btns {
+    flex-direction: column;
+  }
+
+  .btns a,
+  .btns button {
+    width: 100%;
+  }
+}
+
+@media (max-width: 576px) {
+  .container {
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+  }
+
+  h1,
+  h2,
+  h3 {
+    font-size: 1.5rem;
+  }
+
+  .card-img-top {
+    height: 15rem !important;
+  }
+
+  form.d-flex {
+    flex-direction: column;
+  }
+
+  .search-btn,
+  .edit-btn,
+  .add-btn,
+  button[type="submit"] {
+    width: 100%;
+  }
+}
