@@ -90,13 +90,15 @@ app.get("/demo", async (req, res, next) => {
   }
 });
 
+app.get("/", (req, res) => {
+  res.redirect("/listings");
+});
+
+
 app.use("/listings", listings);
 app.use("/listings/:id/reviews", reviews);
 app.use("/", user);
 
-app.get("/", (req, res) => {
-  res.redirect("/listings");
-});
 
 app.use((req, res, next) => {
   next(new ExpressError(404, "Page not found!"));
