@@ -116,7 +116,7 @@ Browse listings by
 
 ## 📱 Responsive Design
 
-Optimized for
+Optimized for below
 
 * Desktop
 * Tablet
