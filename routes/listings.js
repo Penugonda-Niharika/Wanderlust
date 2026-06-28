@@ -1,41 +1,38 @@
 const express = require("express");
 const router = express.Router();
-const Listing = require("../models/listings");
-const Review = require("../models/reviews");
 const wrapAsnyc = require("../utils/wrapAsnyc");
-const ExpressError = require("../utils/ExpressError");
-const { listingSchema, reviewSchema } = require("../schema");
-const { isLoggedIn, isOwner } = require("../middleware");
-const { validateListing } = require("../middleware");
+const { isLoggedIn, isOwner, validateListing } = require("../middleware");
 const listingController = require("../controllers/listings");
 const multer = require("multer");
 const { storage } = require("../cloudConfig");
+
 const upload = multer({
   storage,
   limits: {
-    fileSize: 10 * 1024 * 1024, // 10 MB
+    fileSize: 10 * 1024 * 1024,
   },
 });
+
+const uploadListingImage = (req, res, next) => {
+  upload.single("listing[image]")(req, res, function (err) {
+    if (err) {
+      req.flash("error", err.message);
+      return res.redirect(req.originalUrl.includes("_method=PUT") ? "back" : "/listings/new");
+    }
+    next();
+  });
+};
 
 router
   .route("/")
   .get(wrapAsnyc(listingController.index))
   .post(
     isLoggedIn,
-    (req, res, next) => {
-    upload.single("listing[image]")(req, res, function (err) {
-      if (err) {
-        req.flash("error", err.message);
-        return res.redirect("/listings/new");
-      }
-      next();
-    });
-  },
+    uploadListingImage,
     validateListing,
-    wrapAsnyc(listingController.createListing),
+    wrapAsnyc(listingController.createListing)
   );
 
-//new route
 router.get("/new", isLoggedIn, listingController.renderNewForm);
 
 router
@@ -44,18 +41,17 @@ router
   .put(
     isLoggedIn,
     isOwner,
-    upload.single("listing[image]"),
+    uploadListingImage,
     validateListing,
-    wrapAsnyc(listingController.updateListing),
+    wrapAsnyc(listingController.updateListing)
   )
   .delete(isLoggedIn, isOwner, wrapAsnyc(listingController.deleteListing));
 
-//edit route
 router.get(
   "/:id/edit",
   isLoggedIn,
   isOwner,
-  wrapAsnyc(listingController.renderEditForm),
+  wrapAsnyc(listingController.renderEditForm)
 );
 
 module.exports = router;
