@@ -76,19 +76,6 @@ app.use((req, res, next) => {
   next();
 });
 
-app.get("/demo", async (req, res, next) => {
-  try {
-    let fakeUser = new User({
-      email: "st@gmail.com",
-      username: "det-stu",
-    });
-
-    let reguser = await User.register(fakeUser, "akhfd");
-    res.send(reguser);
-  } catch (err) {
-    next(err);
-  }
-});
 
 app.get("/", (req, res) => {
   res.redirect("/listings");
@@ -111,6 +98,8 @@ app.use((err, req, res, next) => {
   res.status(statusCode).render("listings/error.ejs", { msg });
 });
 
-app.listen(8080, () => {
-  console.log("Server started listening!");
+const PORT = process.env.PORT || 8080;
+
+app.listen(PORT, () => {
+  console.log(`Server started listening on port ${PORT}`);
 });
