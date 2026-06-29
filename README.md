@@ -1,140 +1,62 @@
-# 🏡 StayScape – Airbnb Inspired Vacation Rental Platform
+# 🏡 StayScape
 
 <p align="center">
-  <img src="public/images/favicon.png" width="120" alt="StayScape Logo"/>
+  <img src="public/favicon.ico" alt="StayScape Logo" width="120"/>
 </p>
 
+<h1 align="center">StayScape</h1>
+
 <h3 align="center">
-✨ Discover • Share • Explore Amazing Stays Around the World ✨
+A Modern Full-Stack Vacation Rental Platform
 </h3>
 
 <p align="center">
-A modern, full-stack vacation rental platform inspired by Airbnb, built using the MERN ecosystem's backend technologies with secure authentication, interactive maps, image uploads, reviews, advanced search, and category-based filtering.
+Discover • Book • Share • Explore Amazing Stays Around the World
+</p>
+
+<p align="center">
+
+![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge\&logo=nodedotjs\&logoColor=white)
+![Express.js](https://img.shields.io/badge/Express.js-000000?style=for-the-badge\&logo=express\&logoColor=white)
+![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge\&logo=mongodb\&logoColor=white)
+![Bootstrap](https://img.shields.io/badge/Bootstrap-7952B3?style=for-the-badge\&logo=bootstrap\&logoColor=white)
+![Cloudinary](https://img.shields.io/badge/Cloudinary-3448C5?style=for-the-badge\&logo=cloudinary\&logoColor=white)
+![Render](https://img.shields.io/badge/Render-46E3B7?style=for-the-badge\&logo=render\&logoColor=black)
+![MongoDB Atlas](https://img.shields.io/badge/MongoDB%20Atlas-47A248?style=for-the-badge\&logo=mongodb\&logoColor=white)
+![License](https://img.shields.io/badge/License-MIT-blue?style=for-the-badge)
+
+</p>
+
+<p align="center">
+
+🚀 **Live Demo:** https://YOUR_RENDER_URL.onrender.com
+
+💻 **GitHub:** https://github.com/Penugonda-Niharika/StayScape
+
 </p>
 
 ---
 
-## 🌐 Live Demo
+# 📖 About StayScape
 
-🔗 **Website:** https://StayScape-540d.onrender.com
+**StayScape** is a modern full-stack vacation rental platform inspired by real-world accommodation marketplaces. Users can browse unique stays, create and manage listings, upload property images, discover locations using interactive maps, leave reviews, and securely manage their accounts.
 
-💻 **GitHub:** https://github.com/Penugonda-Niharika/StayScape
-
----
-
-# 📖 About The Project
-
-**StayScape** is a full-stack vacation rental web application inspired by Airbnb. It allows users to explore beautiful stays, create their own listings, upload images, leave reviews, search destinations, and browse properties by category.
-
-The project follows the **MVC Architecture** and focuses on clean backend development, authentication, database relationships, responsive UI, and deployment.
+The application follows the **MVC Architecture** and demonstrates real-world backend development practices including authentication, authorization, RESTful APIs, cloud image storage, geolocation services, database relationships, and deployment using Render and MongoDB Atlas.
 
 ---
 
-# ✨ Features
+# ✨ Core Features
 
-## 🔐 Authentication
-
-- Secure User Registration
-- Login & Logout
-- Session-based Authentication
-- Password Hashing using Passport.js
-
----
-
-## 🛡 Authorization
-
-- Only listing owners can edit or delete their listings.
-- Only review authors can delete their reviews.
-- Protected routes for authenticated users.
-
----
-
-## 🏠 Listings
-
-- Create Listing
-- View Listings
-- Update Listing
-- Delete Listing
-- Listing Detail Page
-
----
-
-## 🖼 Image Upload
-
-- Cloudinary Integration
-- Multer Middleware
-- Image Preview
-- Default Image Support
-
----
-
-## ⭐ Reviews & Ratings
-
-- Add Reviews
-- Delete Reviews
-- Star Rating System
-- Review Validation
-
----
-
-## 🔍 Smart Search
-
-Search listings using
-
-- Property Title
-- Location
-- Country
-
----
-
-## 🏷 Categories
-
-Browse listings by
-
-- 🔥 Trending
-- 🛏 Rooms
-- 🏙 Iconic Cities
-- ⛰ Mountains
-- 🏰 Castles
-- 🏊 Amazing Pools
-- 🏕 Camping
-- 🌾 Farms
-- ❄ Arctic
-- 🛖 Domes
-- 🚤 Boats
-
----
-
-## 🗺 Interactive Maps
-
-- Leaflet.js
-- OpenStreetMap
-- Location Marker
-- Popup Information
-
----
-
-## 📱 Responsive Design
-
-Optimized for below
-
-- Desktop
-- Tablet
-- Mobile Devices
-
----
-
-## ⚡ Flash Messages
-
-Beautiful success and error notifications using **connect-flash**.
-
----
-
-## ✅ Form Validation
-
-- Client-side Validation
-- Server-side Validation
-- Joi Validation
+* 🔐 Secure Authentication & Authorization
+* 🏡 Complete CRUD Operations for Listings
+* ☁️ Cloudinary Image Uploads
+* 🗺️ Interactive Maps using Leaflet & OpenStreetMap
+* ⭐ Review & Rating System
+* 🔍 Smart Search by Title, Country & Location
+* 🏷️ Category-based Property Filtering
+* 📱 Fully Responsive UI
+* ✅ Client-side & Server-side Validation
+* 🚀 Production Deployment
 
 ---
 
@@ -142,81 +64,86 @@ Beautiful success and error notifications using **connect-flash**.
 
 ### Frontend
 
-- HTML5
-- CSS3
-- Bootstrap 5
-- JavaScript
-- EJS
+* HTML5
+* CSS3
+* Bootstrap 5
+* JavaScript
+* EJS
 
 ### Backend
 
-- Node.js
-- Express.js
+* Node.js
+* Express.js
 
 ### Database
 
-- MongoDB Atlas
-- Mongoose
+* MongoDB Atlas
+* Mongoose
 
 ### Authentication
 
-- Passport.js
-- Express Session
+* Passport.js
+* Passport Local Mongoose
+* Express Session
+* Connect Flash
 
-### Cloud Services
+### Validation
 
-- Cloudinary
-- Render
-- OpenStreetMap
-- Leaflet.js
+* Joi
+
+### Cloud & Deployment
+
+* Cloudinary
+* Multer
+* Leaflet.js
+* OpenStreetMap
+* Render
+* GitHub
 
 ---
 
-# 🏗 Project Architecture
+# 📊 Project Statistics
 
-```
-StayScape
-│
-├── controllers/
-├── init/
-├── middleware/
-├── models/
-├── public/
-│   ├── CSS/
-│   ├── JS/
-│   └── images/
-│
-├── routes/
-├── utils/
-├── views/
-│
-├── app.js
-├── cloudConfig.js
-├── package.json
-└── README.md
-```
+* 🏡 30+ Property Listings
+* ⭐ 60+ User Reviews
+* 🏷️ 11 Property Categories
+* 🌍 Multiple Countries
+* 📍 Interactive Maps
+* ☁️ Cloud Image Storage
+* 🔒 Secure Authentication
+* 📱 Responsive Design
 
-# 🛠 Installation
+---
 
-### Clone the Repository
+# 💡 Key Concepts Implemented
+
+* MVC Architecture
+* RESTful Routing
+* Authentication & Authorization
+* CRUD Operations
+* MongoDB Relationships
+* Session Management
+* Image Upload Handling
+* Cloud Storage
+* Geolocation Services
+* Responsive UI Design
+* Form Validation
+* Git & GitHub Workflow
+* Deployment on Render
+
+---
+
+# 🛠️ Installation
 
 ```bash
 git clone https://github.com/Penugonda-Niharika/StayScape.git
-```
 
-### Navigate to the Project
-
-```bash
 cd StayScape
-```
 
-### Install Dependencies
-
-```bash
 npm install
 ```
 
-### Create a `.env` File
+Create a **.env** file:
 
 ```env
 MONGO_URL=
@@ -230,90 +157,44 @@ CLOUD_API_KEY=
 CLOUD_API_SECRET=
 ```
 
-### Start the Server
+Run the application:
 
 ```bash
 npm start
 ```
 
-Visit
+Visit:
 
-```
+```text
 http://localhost:8080
 ```
 
 ---
 
-# 👤 Demo Account
-
-### Username
-
-```
-demo
-```
-
-### Password
-
-```
-demo123
-```
-
----
-
-# 📈 Project Statistics
-
-- 👥 5 Demo Users
-- 🏡 30+ Listings
-- ⭐ 60+ Reviews
-- 🏷 11 Categories
-- 🌍 Multiple Countries
-- 📍 Interactive Maps
-- ☁ Cloud Image Storage
-
----
-
-# 🎯 What I Learned
-
-During the development of StayScape, I gained practical experience with:
-
-- MVC Architecture
-- RESTful APIs
-- Authentication & Authorization
-- MongoDB Relationships
-- Cloudinary Integration
-- Session Management
-- Responsive UI Design
-- Form Validation
-- Deployment on Render
-- MongoDB Atlas
-- Git & GitHub Workflow
-
----
-
 # 🚀 Future Enhancements
 
-- ❤️ Wishlist Feature
-- 📅 Booking System
-- 💳 Online Payments
-- 📆 Availability Calendar
-- 🖼 Multiple Images per Listing
-- 👤 User Profiles
-- 🔔 Email Notifications
-- 🌙 Dark Mode
-- 📊 Admin Dashboard
-- 🤖 AI-based Property Recommendations
+* ❤️ Wishlist
+* 📅 Booking System
+* 💳 Payment Gateway
+* 📆 Availability Calendar
+* 👤 User Profiles
+* 🔔 Email Notifications
+* 🌙 Dark Mode
+* 📊 Admin Dashboard
+* 🤖 AI-powered Recommendations
+* 🌐 Google OAuth
 
 ---
 
 # 🤝 Connect With Me
 
-### GitHub
+**GitHub**
 
-https://github.com/Penugonda-Niharika
+👉 https://github.com/Penugonda-Niharika
 
-### LinkedIn
+**LinkedIn**
 
-https://www.linkedin.com/in/penugonda-niharika-b69814366/
+👉 https://www.linkedin.com/in/penugonda-niharika-b69814366/
 
 ---
 
@@ -321,10 +202,14 @@ https://www.linkedin.com/in/penugonda-niharika-b69814366/
 
 If you found this project useful, please consider giving it a **⭐ Star** on GitHub.
 
-It motivates me to build more open-source projects and continue learning.
+Your support motivates me to build more real-world projects and continuously improve my skills.
 
 ---
 
 <p align="center">
-Made with ❤️ by <b>Penugonda Niharika</b>
+
+### 💙 Designed & Developed by **Penugonda Niharika**
+
+*"Building scalable full-stack applications, one project at a time."* 🚀
+
 </p>
