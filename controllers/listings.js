@@ -33,7 +33,6 @@ module.exports.renderNewForm = (req, res) => {
   res.render("listings/new.ejs");
 };
 
-
 module.exports.createListing = async (req, res) => {
   const listing = req.body.listing;
   const newListing = new Listing(listing);
@@ -54,7 +53,7 @@ module.exports.createListing = async (req, res) => {
       limit: 1,
     },
     headers: {
-      "User-Agent": "WanderLustApp/1.0",
+      "User-Agent": "StayScapeApp/1.0",
     },
   });
 

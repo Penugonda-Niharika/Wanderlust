@@ -1,7 +1,7 @@
-# 🏡 WanderLust – Airbnb Inspired Vacation Rental Platform
+# 🏡 StayScape – Airbnb Inspired Vacation Rental Platform
 
 <p align="center">
-  <img src="public/images/favicon.png" width="120" alt="WanderLust Logo"/>
+  <img src="public/images/favicon.png" width="120" alt="StayScape Logo"/>
 </p>
 
 <h3 align="center">
@@ -16,15 +16,15 @@ A modern, full-stack vacation rental platform inspired by Airbnb, built using th
 
 ## 🌐 Live Demo
 
-🔗 **Website:** https://wanderlust-540d.onrender.com
+🔗 **Website:** https://StayScape-540d.onrender.com
 
-💻 **GitHub:** https://github.com/Penugonda-Niharika/Wanderlust
+💻 **GitHub:** https://github.com/Penugonda-Niharika/StayScape
 
 ---
 
 # 📖 About The Project
 
-**WanderLust** is a full-stack vacation rental web application inspired by Airbnb. It allows users to explore beautiful stays, create their own listings, upload images, leave reviews, search destinations, and browse properties by category.
+**StayScape** is a full-stack vacation rental web application inspired by Airbnb. It allows users to explore beautiful stays, create their own listings, upload images, leave reviews, search destinations, and browse properties by category.
 
 The project follows the **MVC Architecture** and focuses on clean backend development, authentication, database relationships, responsive UI, and deployment.
 
@@ -34,46 +34,46 @@ The project follows the **MVC Architecture** and focuses on clean backend develo
 
 ## 🔐 Authentication
 
-* Secure User Registration
-* Login & Logout
-* Session-based Authentication
-* Password Hashing using Passport.js
+- Secure User Registration
+- Login & Logout
+- Session-based Authentication
+- Password Hashing using Passport.js
 
 ---
 
 ## 🛡 Authorization
 
-* Only listing owners can edit or delete their listings.
-* Only review authors can delete their reviews.
-* Protected routes for authenticated users.
+- Only listing owners can edit or delete their listings.
+- Only review authors can delete their reviews.
+- Protected routes for authenticated users.
 
 ---
 
 ## 🏠 Listings
 
-* Create Listing
-* View Listings
-* Update Listing
-* Delete Listing
-* Listing Detail Page
+- Create Listing
+- View Listings
+- Update Listing
+- Delete Listing
+- Listing Detail Page
 
 ---
 
 ## 🖼 Image Upload
 
-* Cloudinary Integration
-* Multer Middleware
-* Image Preview
-* Default Image Support
+- Cloudinary Integration
+- Multer Middleware
+- Image Preview
+- Default Image Support
 
 ---
 
 ## ⭐ Reviews & Ratings
 
-* Add Reviews
-* Delete Reviews
-* Star Rating System
-* Review Validation
+- Add Reviews
+- Delete Reviews
+- Star Rating System
+- Review Validation
 
 ---
 
@@ -81,9 +81,9 @@ The project follows the **MVC Architecture** and focuses on clean backend develo
 
 Search listings using
 
-* Property Title
-* Location
-* Country
+- Property Title
+- Location
+- Country
 
 ---
 
@@ -91,26 +91,26 @@ Search listings using
 
 Browse listings by
 
-* 🔥 Trending
-* 🛏 Rooms
-* 🏙 Iconic Cities
-* ⛰ Mountains
-* 🏰 Castles
-* 🏊 Amazing Pools
-* 🏕 Camping
-* 🌾 Farms
-* ❄ Arctic
-* 🛖 Domes
-* 🚤 Boats
+- 🔥 Trending
+- 🛏 Rooms
+- 🏙 Iconic Cities
+- ⛰ Mountains
+- 🏰 Castles
+- 🏊 Amazing Pools
+- 🏕 Camping
+- 🌾 Farms
+- ❄ Arctic
+- 🛖 Domes
+- 🚤 Boats
 
 ---
 
 ## 🗺 Interactive Maps
 
-* Leaflet.js
-* OpenStreetMap
-* Location Marker
-* Popup Information
+- Leaflet.js
+- OpenStreetMap
+- Location Marker
+- Popup Information
 
 ---
 
@@ -118,9 +118,9 @@ Browse listings by
 
 Optimized for below
 
-* Desktop
-* Tablet
-* Mobile Devices
+- Desktop
+- Tablet
+- Mobile Devices
 
 ---
 
@@ -132,9 +132,9 @@ Beautiful success and error notifications using **connect-flash**.
 
 ## ✅ Form Validation
 
-* Client-side Validation
-* Server-side Validation
-* Joi Validation
+- Client-side Validation
+- Server-side Validation
+- Joi Validation
 
 ---
 
@@ -142,40 +142,40 @@ Beautiful success and error notifications using **connect-flash**.
 
 ### Frontend
 
-* HTML5
-* CSS3
-* Bootstrap 5
-* JavaScript
-* EJS
+- HTML5
+- CSS3
+- Bootstrap 5
+- JavaScript
+- EJS
 
 ### Backend
 
-* Node.js
-* Express.js
+- Node.js
+- Express.js
 
 ### Database
 
-* MongoDB Atlas
-* Mongoose
+- MongoDB Atlas
+- Mongoose
 
 ### Authentication
 
-* Passport.js
-* Express Session
+- Passport.js
+- Express Session
 
 ### Cloud Services
 
-* Cloudinary
-* Render
-* OpenStreetMap
-* Leaflet.js
+- Cloudinary
+- Render
+- OpenStreetMap
+- Leaflet.js
 
 ---
 
 # 🏗 Project Architecture
 
 ```
-WanderLust
+StayScape
 │
 ├── controllers/
 ├── init/
@@ -201,13 +201,13 @@ WanderLust
 ### Clone the Repository
 
 ```bash
-git clone https://github.com/Penugonda-Niharika/Wanderlust.git
+git clone https://github.com/Penugonda-Niharika/StayScape.git
 ```
 
 ### Navigate to the Project
 
 ```bash
-cd Wanderlust
+cd StayScape
 ```
 
 ### Install Dependencies
@@ -262,46 +262,46 @@ demo123
 
 # 📈 Project Statistics
 
-* 👥 5 Demo Users
-* 🏡 30+ Listings
-* ⭐ 60+ Reviews
-* 🏷 11 Categories
-* 🌍 Multiple Countries
-* 📍 Interactive Maps
-* ☁ Cloud Image Storage
+- 👥 5 Demo Users
+- 🏡 30+ Listings
+- ⭐ 60+ Reviews
+- 🏷 11 Categories
+- 🌍 Multiple Countries
+- 📍 Interactive Maps
+- ☁ Cloud Image Storage
 
 ---
 
 # 🎯 What I Learned
 
-During the development of WanderLust, I gained practical experience with:
+During the development of StayScape, I gained practical experience with:
 
-* MVC Architecture
-* RESTful APIs
-* Authentication & Authorization
-* MongoDB Relationships
-* Cloudinary Integration
-* Session Management
-* Responsive UI Design
-* Form Validation
-* Deployment on Render
-* MongoDB Atlas
-* Git & GitHub Workflow
+- MVC Architecture
+- RESTful APIs
+- Authentication & Authorization
+- MongoDB Relationships
+- Cloudinary Integration
+- Session Management
+- Responsive UI Design
+- Form Validation
+- Deployment on Render
+- MongoDB Atlas
+- Git & GitHub Workflow
 
 ---
 
 # 🚀 Future Enhancements
 
-* ❤️ Wishlist Feature
-* 📅 Booking System
-* 💳 Online Payments
-* 📆 Availability Calendar
-* 🖼 Multiple Images per Listing
-* 👤 User Profiles
-* 🔔 Email Notifications
-* 🌙 Dark Mode
-* 📊 Admin Dashboard
-* 🤖 AI-based Property Recommendations
+- ❤️ Wishlist Feature
+- 📅 Booking System
+- 💳 Online Payments
+- 📆 Availability Calendar
+- 🖼 Multiple Images per Listing
+- 👤 User Profiles
+- 🔔 Email Notifications
+- 🌙 Dark Mode
+- 📊 Admin Dashboard
+- 🤖 AI-based Property Recommendations
 
 ---
 
